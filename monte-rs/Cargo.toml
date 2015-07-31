@@ -1,0 +1,11 @@
+[package]
+name = "monte"
+version = "0.1.0"
+authors = ["Dominique Luna <dluna132@gmail.com>"]
+
+[lib]
+name = "monte"
+crate-type = ["dylib"]
+
+[dependencies]
+rand = "0.3"
