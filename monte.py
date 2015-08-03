@@ -22,5 +22,5 @@ def simulate_pi(needles):
 
 
 if __name__ == '__main__':
-    mean = estimate_pi(100, 1000)
+    mean = estimate_pi(1000, 10000)
     print(mean)

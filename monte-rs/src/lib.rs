@@ -5,7 +5,7 @@ use std::thread;
 use std::sync::Arc;
 use std::sync::mpsc;
 
-fn simulate_pi(needles: u32) -> f64 {
+fn simulate_pi(needles: i32) -> f64 {
     let mut hits = 0;
     let between = Range::new(-1f64, 1.);
     let mut rng = rand::thread_rng();
@@ -23,7 +23,7 @@ fn simulate_pi(needles: u32) -> f64 {
 }
 
 #[no_mangle]
-pub extern fn estimate_pi(sims: u32, needles: u32) -> f64 {
+pub extern fn estimate_pi(sims: i32, needles: i32) -> f64 {
     println!("Running {} simulations with {} needles being dropped ...", sims, needles);
     let mut data: Vec<f64> = Vec::new();
     let nx = Arc::new(needles);
