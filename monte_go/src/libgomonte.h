@@ -1,6 +1,6 @@
 /* Created by "go tool cgo" - DO NOT EDIT. */
 
-/* package _/Users/dluna/Dropbox/Code/ffi_story/monte-go */
+/* package _/Users/dluna/Dropbox/Code/ffi_story/monte_go/src */
 
 /* Start of preamble from import "C" comments.  */
 

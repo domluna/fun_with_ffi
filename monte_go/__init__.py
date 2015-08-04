@@ -1,6 +1,6 @@
 from ctypes import cdll, c_double, c_int32
 
-lib = cdll.LoadLibrary("monte-go/libgomonte.so")
+lib = cdll.LoadLibrary("src/libgomonte.so")
 estimate_pi = lib.EstimatePi
 # need to change restype as it defaults to an int
 estimate_pi.restype = c_double

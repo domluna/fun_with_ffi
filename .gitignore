@@ -1,1 +1,2 @@
-monte-rs/target
+monte_rs/target
+*.pyc
