@@ -3,7 +3,6 @@ package main
 import "C"
 import (
         "math/rand"
-        "fmt"
 )
 
 func simulatePi(needles int) float64 {
@@ -21,7 +20,6 @@ func simulatePi(needles int) float64 {
 
 //export EstimatePi
 func EstimatePi(sims, needles int) float64 {
-        fmt.Printf("Running %d simulations with %d needles being dropped\n", sims, needles)
         ch := make(chan float64, 1)
 
         // Could also use sync.WaitGroup here but the timings

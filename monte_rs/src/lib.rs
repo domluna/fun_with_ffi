@@ -24,7 +24,6 @@ fn simulate_pi(needles: i32) -> f64 {
 
 #[no_mangle]
 pub extern fn estimate_pi(sims: i32, needles: i32) -> f64 {
-    println!("Running {} simulations with {} needles being dropped ...", sims, needles);
     let mut data: Vec<f64> = Vec::new();
     let nx = Arc::new(needles);
 

@@ -1,6 +1,8 @@
+from __future__ import print_function
 import random
 
 def estimate_pi(sims, needles):
+    print("Running {} simulations with {} needles being dropped ...".format(sims, needles))
     trials = []
     for _ in xrange(sims):
         trials.append(simulate_pi(needles))
